@@ -47,8 +47,11 @@ nav ul li a:hover:not(.active) {
 
 header{
     margin: 0;
-    height: 500px;
+    height: 480px;
     background-color: #2e3a19;
+    background-image: url("header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 article{
