@@ -1,8 +1,14 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
-    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #000;
+    background-color: #587d1b;
 }
 
 .wrapper {
-    border: 15px solid green;
-    height: 100vh;
+    background-color: white;
 }
