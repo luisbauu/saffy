@@ -102,16 +102,3 @@ footer{
     height: 100px;
     background-color: #2e3a19;
 }
-.wrapper {
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #fff;
-}
-
-.saffylogo {
-    display: inline;
-    height: 4em;
-    width: auto;
-    object-fit: cover;
-    margin-top: -25px;
-}
