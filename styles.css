@@ -15,10 +15,16 @@ p {
 }
 
 nav {
-    margin: 0;
+    <<<<<<< HEAD height: 50px;
+    background-color: #F6F8FA;
+    /* box-shadow: 0px 10px 5px #1A1B1D; */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    =======margin: 0;
     height: 50px;
     background-color: #f6f8fa;
     box-shadow: 0px 10px 5px #1A1B1D;
+    >>>>>>>main
 }
 
 nav ul {
@@ -45,15 +51,6 @@ nav ul li a:hover:not(.active) {
     text-decoration: underline;
 }
 
-header {
-    margin: 0;
-    height: 1000px;
-    background-color: #2e3a19;
-    background-image: url("static/header.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 article {
     margin: 100px auto;
     width: 500px;
@@ -68,6 +65,37 @@ footer {
     margin: 0;
     height: 1000px;
     background-color: #2e3a19;
+}
+
+.img-overlay-wrap {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    /* <= shrinks container to image size */
+}
+
+.headerImage {
+    /* <= optional, for responsiveness
+    display: block;
+    width: 100%; */
+    /* The image used */
+    background-image: url("static/header.png");
+    /* Set a specific height */
+    height: 50vw;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.img-overlay-wrap svg {
+    position: absolute;
+    top: 28vw;
+}
+
+footer {
     background-image: url("static/footer.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,14 +146,15 @@ footer h3 {
     text-decoration: underline;
 }
 
-footer form{
+footer form {
     color: #fefffe;
     margin: 500px 100px 0px 100px;
     float: left;
     width: 200px;
 }
 
-footer form input, footer form textarea{
+footer form input,
+footer form textarea {
     background-color: #757f4b;
     width: 100%;
     margin: 8px 0;
@@ -135,6 +164,6 @@ footer form input, footer form textarea{
     box-sizing: border-box;
 }
 
-.submit{
+.submit {
     background-color: #d9a11c;
 }
