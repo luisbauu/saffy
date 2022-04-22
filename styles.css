@@ -7,7 +7,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #000;
-    background-color: #F6F8FA;
+    background-color: #f6f8fa;
 }
 
 p {
@@ -15,11 +15,16 @@ p {
 }
 
 nav {
-    height: 50px;
+    <<<<<<< HEAD height: 50px;
     background-color: #F6F8FA;
     /* box-shadow: 0px 10px 5px #1A1B1D; */
     margin-top: 5px;
     margin-bottom: 10px;
+    =======margin: 0;
+    height: 50px;
+    background-color: #f6f8fa;
+    box-shadow: 0px 10px 5px #1A1B1D;
+    >>>>>>>main
 }
 
 nav ul {
@@ -58,7 +63,7 @@ article h3 {
 
 footer {
     margin: 0;
-    height: 100px;
+    height: 1000px;
     background-color: #2e3a19;
 }
 
@@ -88,4 +93,77 @@ footer {
 .img-overlay-wrap svg {
     position: absolute;
     top: 28vw;
+}
+
+footer {
+    background-image: url("static/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footerAbout {
+    color: #fefffe;
+    margin: 600px 100px 0px 100px;
+    float: left;
+    width: 200px;
+}
+
+footer h3 {
+    color: #d9a11c;
+}
+
+.footerAbout a {
+    text-decoration: none;
+    color: #d9a11c;
+}
+
+.footerAbout a:hover {
+    text-decoration: underline;
+    color: #d9a11c;
+}
+
+.footerPartner {
+    color: #fefffe;
+    margin: 600px 100px 0px 100px;
+    float: left;
+    width: 200px;
+}
+
+.footerPartner ul {
+    list-style: none;
+}
+
+.footerPartner ul li {
+    margin-top: 10px;
+}
+
+.footerPartner ul li a {
+    text-decoration: none;
+    color: #d9a11c;
+}
+
+.footerPartner ul li a:hover {
+    text-decoration: underline;
+}
+
+footer form {
+    color: #fefffe;
+    margin: 500px 100px 0px 100px;
+    float: left;
+    width: 200px;
+}
+
+footer form input,
+footer form textarea {
+    background-color: #757f4b;
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit {
+    background-color: #d9a11c;
 }
