@@ -15,16 +15,10 @@ p {
 }
 
 nav {
-    <<<<<<< HEAD height: 50px;
-    background-color: #F6F8FA;
-    /* box-shadow: 0px 10px 5px #1A1B1D; */
-    margin-top: 5px;
-    margin-bottom: 10px;
-    =======margin: 0;
+    margin: 0;
     height: 50px;
     background-color: #f6f8fa;
     box-shadow: 0px 10px 5px #1A1B1D;
-    >>>>>>>main
 }
 
 nav ul {
@@ -68,31 +62,34 @@ footer {
 }
 
 .img-overlay-wrap {
-    width: 100%;
+    min-width: 100%;
+    width: auto;
     position: relative;
     display: inline-block;
     /* <= shrinks container to image size */
 }
 
 .headerImage {
-    /* <= optional, for responsiveness
-    display: block;
-    width: 100%; */
     /* The image used */
     background-image: url("static/header.png");
     /* Set a specific height */
-    height: 50vw;
+    min-height: 50vw;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
 }
 
 .img-overlay-wrap svg {
     position: absolute;
-    top: 28vw;
+    top: 57%;
+}
+
+.test {
+    position: absolute;
+    right: 10vw;
+    top: 30%;
 }
 
 footer {
