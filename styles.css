@@ -7,7 +7,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #000;
-    background-color: #F6F8FA;
+    background-color: #f6f8fa;
 }
 
 p{
@@ -17,7 +17,7 @@ p{
 nav{
     margin: 0;
     height: 50px;
-    background-color: #F6F8FA;
+    background-color: #f6f8fa;
     box-shadow: 0px 10px 5px #1A1B1D;
 }
 
@@ -47,7 +47,7 @@ nav ul li a:hover:not(.active) {
 
 header{
     margin: 0;
-    height: 700px;
+    height: 1000px;
     background-color: #2e3a19;
     background-image: url("static/header.png");
     background-repeat: no-repeat;
@@ -67,5 +67,9 @@ article h3{
 footer{
     margin: 0;
     height: 100px;
+    height: 1000px;
     background-color: #2e3a19;
+    background-image: url("static/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
