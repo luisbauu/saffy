@@ -2,39 +2,6 @@ html {
     overflow-x: hidden;
 }
 
-nav ul {
-    width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    list-style-type: none;
-    margin-top: 20px;
-    height: 5em;
-    overflow: hidden;
-    justify-content: center;
-    display: flex;
-}
-
-nav ul li {
-    padding: 0px;
-    margin-top: 1em;
-    margin-right: 50px;
-    display: inline;
-    float: right;
-}
-
-nav ul li a {
-    font-size: 1.25em;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 8px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -43,11 +10,11 @@ body {
     background-color: #f6f8fa;
 }
 
-p{
+p {
     margin: 0;
 }
 
-nav{
+nav {
     margin: 0;
     height: 50px;
     background-color: #f6f8fa;
@@ -60,12 +27,12 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
-  
+}
+
 nav ul li {
     float: left;
 }
-  
+
 nav ul li a {
     display: block;
     color: #626e31;
@@ -73,12 +40,12 @@ nav ul li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-  
+
 nav ul li a:hover:not(.active) {
     text-decoration: underline;
 }
 
-header{
+header {
     margin: 0;
     height: 1000px;
     background-color: #2e3a19;
@@ -87,17 +54,17 @@ header{
     background-size: cover;
 }
 
-article{
+article {
     margin: 100px auto;
     width: 500px;
 }
 
-article h3{
+article h3 {
     text-align: center;
     font-size: 125%
 }
 
-footer{
+footer {
     margin: 0;
     height: 1000px;
     background-color: #2e3a19;
@@ -106,47 +73,47 @@ footer{
     background-size: cover;
 }
 
-.footerAbout{
+.footerAbout {
     color: #fefffe;
     margin: 600px 100px 0px 100px;
     float: left;
     width: 200px;
 }
 
-footer h3{
+footer h3 {
     color: #d9a11c;
 }
 
-.footerAbout a{
+.footerAbout a {
     text-decoration: none;
     color: #d9a11c;
 }
 
-.footerAbout a:hover{
+.footerAbout a:hover {
     text-decoration: underline;
     color: #d9a11c;
 }
 
-.footerPartner{
+.footerPartner {
     color: #fefffe;
     margin: 600px 100px 0px 100px;
     float: left;
     width: 200px;
 }
 
-.footerPartner ul{
+.footerPartner ul {
     list-style: none;
 }
 
-.footerPartner ul li{
+.footerPartner ul li {
     margin-top: 10px;
 }
 
-.footerPartner ul li a{
+.footerPartner ul li a {
     text-decoration: none;
     color: #d9a11c;
 }
 
-.footerPartner ul li a:hover{
+.footerPartner ul li a:hover {
     text-decoration: underline;
 }
