@@ -66,10 +66,54 @@ article h3{
 
 footer{
     margin: 0;
-    height: 100px;
     height: 1000px;
     background-color: #2e3a19;
     background-image: url("static/footer.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.footerAbout{
+    color: #fefffe;
+    margin: 600px 100px 0px 100px;
+    float: left;
+    width: 200px;
+}
+
+footer h3{
+    color: #d9a11c;
+}
+
+.footerAbout a{
+    text-decoration: none;
+    color: #d9a11c;
+}
+
+.footerAbout a:hover{
+    text-decoration: underline;
+    color: #d9a11c;
+}
+
+.footerPartner{
+    color: #fefffe;
+    margin: 600px 100px 0px 100px;
+    float: left;
+    width: 200px;
+}
+
+.footerPartner ul{
+    list-style: none;
+}
+
+.footerPartner ul li{
+    margin-top: 10px;
+}
+
+.footerPartner ul li a{
+    text-decoration: none;
+    color: #d9a11c;
+}
+
+.footerPartner ul li a:hover{
+    text-decoration: underline;
 }
