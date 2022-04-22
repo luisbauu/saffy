@@ -70,10 +70,10 @@
     </nav>
     <header>
     </header>
-    <div style="background-color:#2e3a19;">
-        <div class="row" style="height:700px; background-color: #2e3a19;">
-        <div class="column" style="background-color:#2e3a19;color: white">
-            <h3>Contact Form</h3>
+    <div style="background-color:inherit;">
+        <div class="row" style="height:700px; background-color: inherit;">
+        <div class="column" style="background-color:inherit;color: white">
+            <h3 style="color: #58722a">Contact Form</h3>
             <div class="container" style="background-color: #2e3a19;">
                 <form action="/action_page.php">
                 <label for="fname" style="color: white">Name</label>
@@ -92,7 +92,7 @@
                 </form>
             </div>
         </div>
-        <div class="column" style="background-color:#58722a;color: white">
+        <div class="column" style="background-color:inherit;color: #58722a">
             <h2>Connect with us!</h2>
             <h4>For inquiries or any questiosn: <br> Email us at <a href="url">saffyinc@gmail.com</a> <br> </h4>
         </div>
@@ -100,16 +100,29 @@
     </div>
     
     <footer>
+        <div class="footerAbout">
+            <h3>ABOUT</h3>
+            <p>SAFFY, Inc. stands for <strong>Social Actions For Filipino Youth</strong>, this group was founded to create alternative sources of livelihood for impoverished women and youth in marginalized areas in the Philippines. <a href="">KNOW MORE</a> </p>  
+        </div>
+
+        <div class="footerPartner">
+            <h3>OUR PARTNERS</h3>
+            <ul>
+                <li><a href="">Partner 1</a></li>
+                <li><a href="">Partner 2</a></li>
+                <li><a href="">Partner 3</a></li>
+                <li><a href="">Partner 4</a></li>
+            </ul>  
+        </div>
+
+        <form action="">
+          <h3>ASK US A QUESTION</h3>
+          <input type="text" id="fname" name="fname" value="NAME"><br>
+          <input type="email" id="femail" name="femail" value="EMAIL"><br>
+          <input type="text" id="fsubject" name="fsubject" value="SUBJECT"><br>
+          <textarea name="fmessage" id="fmessage" cols="21" rows="10"></textarea> <br>
+          <input type="submit" value="Submit" class="submit">
+      </form>
     </footer>
-    <nav>
-        <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">OUR STORY</a></li>
-            <li><a href="">SAFRUDI</a></li>
-            <li><a href="">PRODUCTS</a></li>
-            <li><a href="">EVENTS</a></li>
-            <li><a href="">CONTACT US</a></li>
-        </ul>
-    </nav>
 </body>
 </html>
