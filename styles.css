@@ -117,3 +117,24 @@ footer h3{
 .footerPartner ul li a:hover{
     text-decoration: underline;
 }
+
+footer form{
+    color: #fefffe;
+    margin: 500px 100px 0px 100px;
+    float: left;
+    width: 200px;
+}
+
+footer form input, footer form textarea{
+    background-color: #757f4b;
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit{
+    background-color: #d9a11c;
+}
