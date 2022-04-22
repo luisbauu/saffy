@@ -16,7 +16,7 @@ p {
 
 nav {
     margin: 0;
-    height: 50px;
+    height: 60px;
     background-color: #f6f8fa;
     box-shadow: 0px 10px 5px #1A1B1D;
 }
@@ -34,6 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
+    margin-top: 10px;
     display: block;
     color: #626e31;
     text-align: center;
@@ -86,7 +87,7 @@ footer {
     top: 57%;
 }
 
-.test {
+.saffyParallaxText {
     position: absolute;
     right: 10vw;
     top: 30%;
