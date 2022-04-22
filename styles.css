@@ -2,6 +2,39 @@ html {
     overflow-x: hidden;
 }
 
+nav ul {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    list-style-type: none;
+    margin-top: 20px;
+    height: 5em;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0px;
+    margin-top: 1em;
+    margin-right: 50px;
+    display: inline;
+    float: right;
+}
+
+nav ul li a {
+    font-size: 1.25em;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -10,5 +43,15 @@ body {
 }
 
 .wrapper {
-    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.saffylogo {
+    display: inline;
+    height: 4em;
+    width: auto;
+    object-fit: cover;
+    margin-top: -25px;
 }
