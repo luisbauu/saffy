@@ -8,11 +8,6 @@
     <link rel="shortcut icon" href="static/SAFFY LOGO.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-        background-color: #474e5d;
-        font-family: Helvetica, sans-serif;
-         }
-
         .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         max-width: 300px;
@@ -41,7 +36,9 @@
         .card button:hover {
         opacity: 0.7;
         }
-
+        table {
+            width: 90%;   
+        }
         th, td {
         border-radius: 10px;
         width:5%;
@@ -81,7 +78,8 @@
     <title>Saffy</title>
 </head>
 
-<body>
+<body style="overflow:scroll">
+
   <nav>
     <ul>
         <li><a href="index.html">HOME</a></li>
@@ -95,10 +93,10 @@
   <header>
   </header>
 
-  <div class="row">
-    <div class="column left" style="background-color:#f6f8fa;">
+  <div class="row" style="background-color:#f6f8fa;">
+    <div class="column left" style="overflow:clip" >
       <h2>Products</h2>
-      <table>
+      <table >
         <tr>
             <td>
                 <div class="card">
@@ -232,9 +230,6 @@
     </div>
   </div>
 
-  <div >  
-      
-  </div>
 
   <footer>
         <div class="footerAbout">
