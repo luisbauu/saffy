@@ -7,7 +7,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #000;
-    background-color: #f6f8fa;
+    background-color: #f6f8fb;
 }
 
 p {
@@ -18,7 +18,7 @@ nav {
     margin: 0;
     height: 60px;
     background-color: #f6f8fa;
-    box-shadow: 0px 10px 5px #1A1B1D;
+    /* box-shadow: 0px 10px 5px #1A1B1D; */
 }
 
 nav ul {
@@ -91,6 +91,7 @@ footer {
     position: absolute;
     right: 10vw;
     top: 30%;
+    color: #626e31;
 }
 
 footer {
@@ -164,4 +165,46 @@ footer form textarea {
 
 .submit {
     background-color: #d9a11c;
+}
+
+.event_container {
+    overflow: hidden;
+}
+
+.event_breakout {
+    overflow-x: visible;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    /* "auto" or "thin" */
+    scrollbar-color: blue orange;
+    /* scroll thumb and track */
+}
+
+.event_breakout li {
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin: 0rem;
+    padding: 0rem;
+    display: inline-block;
+    width: 50vw;
+    height: 300px;
+    background: #f6f8fc;
+}
+
+.event_breakout::-webkit-scrollbar {
+    width: 1px;
+    /* width of the entire scrollbar */
+}
+
+.event_breakout::-webkit-scrollbar-track {
+    background: #f6f8fc;
+    /* color of the tracking area */
+}
+
+.event_breakout::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+    border: 5px solid #f6f8fc;
 }
