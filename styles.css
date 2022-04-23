@@ -3,11 +3,28 @@ html {
 }
 
 body {
+    overflow: overlay;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #000;
     background-color: #f6f8fb;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #f6f8fc;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #626e31;
+    border-radius: 2.5px;
+    border: 2px solid #626e31;
 }
 
 p {
