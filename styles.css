@@ -9,6 +9,7 @@ body {
     font-weight: 300;
     color: #000;
     background-color: #f6f8fb;
+    min-width: 1200px;
 }
 
 body::-webkit-scrollbar {
@@ -108,14 +109,24 @@ article h3 {
 footer {
     margin-top: 50px;
     background-color: #303c1c;
-    height: 500px;
+    height: 460px;
     line-height: 1.25;
     border-top: 5px solid #d9a11c;
+    text-align: center;
+}
+
+footer div{
+    display: inline-block;
+    margin: 0 50px;
+}
+
+.footerContainer{
+    position: relative;
+    margin: 0 auto;
 }
 
 .footerAbout {
     color: #fefffe;
-    float: left;
     width: 200px;
 }
 
@@ -135,19 +146,19 @@ footer h3 {
 
 .footerPartner {
     color: #fefffe;
-    float: left;
-    width: 200px;
+    width: 300px;
 }
 
 .footerPartner ul {
+    margin: 0px;
     list-style-type: none;
     padding: 0px;
 }
 
 .footerPartner ul li {
     margin-top: 10px;
-    float: left;
-    width: 20%;
+    display: inline-block;
+    width: 15%;
 }
 
 .footerPartner ul li a {
@@ -171,6 +182,7 @@ footer form textarea {
     font-size: 90%;
     background-color: #757f4b;
     width: 100%;
+    height: 115x;
     margin: 8px 0;
     padding: 10px;
     display: inline-block;
@@ -183,18 +195,8 @@ footer form input{
     height: 30px;
 }
 
-.footerContainer{
-    position: absolute;
-    margin-left: 13%;
-}
-
-.footerAbout, .footerPartner, footer form{
-    margin-top: 2%;
-    margin-left: 100px;
-}
-
 .partnerPicture{
-    width: 90%;
+    width: 40px;
 }
 
 .submit {
