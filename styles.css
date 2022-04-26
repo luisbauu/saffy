@@ -90,7 +90,7 @@ article h3 {
     /* The image used */
     background-image: url("static/header_clean.png");
     /* Set a specific height */
-    min-height: 50vw;
+    height: 50vw;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -100,13 +100,13 @@ article h3 {
 
 .img-overlay-wrap svg {
     position: absolute;
-    top: 62%;
+    top: 29vw;
 }
 
 .saffyParallaxText {
     position: absolute;
     right: 5vw;
-    top: 40%;
+    top: 30%;
     color: #c3dc55;
 }
 
