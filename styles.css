@@ -139,7 +139,6 @@ article h3 {
     background-size: cover;
 }
 
-
 .img-overlay-wrap svg {
     position: absolute;
     top: 29vw;
@@ -148,6 +147,13 @@ article h3 {
 .saffyParallaxText {
     position: absolute;
     right: 5vw;
+    top: 30%;
+    color: #c3dc55;
+}
+
+.saffyPartnersText {
+    position: absolute;
+    left: 5vw;
     top: 30%;
     color: #c3dc55;
 }
