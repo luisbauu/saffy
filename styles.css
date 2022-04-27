@@ -1,17 +1,3 @@
-html {
-    overflow-x: hidden;
-}
-
-body {
-    overflow: overlay;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: #000;
-    background-color: #f6f8fb;
-    min-width: 1200px;
-}
-
 body::-webkit-scrollbar {
     width: 10px;
     /* width of the entire scrollbar */
@@ -25,7 +11,6 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background-color: #626e31;
-    border-radius: 2.5px;
     border: 2px solid #626e31;
 }
 
@@ -33,18 +18,35 @@ p {
     margin: 0;
 }
 
+body {
+    overflow: overlay;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #000;
+    background-color: #f6f8fb;
+}
+
 nav {
     position: relative;
     z-index: 100;
-    box-shadow: 0px 2px 10px #D3D3D3;
     margin: 0;
+    margin-right: 10px;
     height: 60px;
-    background-color: #f6f8fa;
-    /* box-shadow: 0px 10px 5px #1A1B1D; */
+    background: #f6f8fa;
+    box-shadow: 0px 2px 10px #D3D3D3;
+}
+
+nav img {
+    height: auto;
+    margin-left: 48px;
+    width: 120px;
+    margin-top: 4px;
 }
 
 nav ul {
     float: right;
+    margin-right: 30px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -52,20 +54,47 @@ nav ul {
 }
 
 nav ul li {
-    float: left;
+    display: inline-block;
 }
 
 nav ul li a {
     margin-top: 10px;
     display: block;
     color: #626e31;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: all 0.3;
+    text-decoration: none;
+    transition: .5s;
 }
 
-nav ul li a:hover:not(.active) {
+nav ul li a:hover,
+nav ul li a.active {
     text-decoration: underline;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul li:hover>ul {
+    background: #f6f8fa;
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0px 2px 10px #D3D3D3;
+    padding-bottom: 10px;
+}
+
+nav ul ul li {
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border-top: none;
 }
 
 article {
@@ -88,9 +117,9 @@ article h3 {
 
 .headerImage {
     /* The image used */
-    background-image: url("static/header.png");
+    background-image: url("static/header_clean.png");
     /* Set a specific height */
-    min-height: 50vw;
+    height: 50vw;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -100,14 +129,14 @@ article h3 {
 
 .img-overlay-wrap svg {
     position: absolute;
-    top: 57%;
+    top: 29vw;
 }
 
 .saffyParallaxText {
     position: absolute;
-    right: 10vw;
+    right: 5vw;
     top: 30%;
-    color: #626e31;
+    color: #c3dc55;
 }
 
 footer {
@@ -119,12 +148,12 @@ footer {
     text-align: center;
 }
 
-footer div{
+footer div {
     display: inline-block;
     margin: 0 50px;
 }
 
-.footerContainer{
+.footerContainer {
     position: relative;
     margin: 0 auto;
 }
@@ -186,7 +215,7 @@ footer form textarea {
     font-size: 90%;
     background-color: #757f4b;
     width: 100%;
-    height: 115x;
+    height: 120px;
     margin: 8px 0;
     padding: 10px;
     display: inline-block;
@@ -195,30 +224,16 @@ footer form textarea {
     box-sizing: border-box;
 }
 
-footer form input{
+footer form input {
     height: 30px;
 }
 
-.partnerPicture{
+.partnerPicture {
     width: 40px;
 }
 
 .submit {
     background-color: #d9a11c;
-}
-
-.event_container {
-    overflow: hidden;
-}
-
-.event_breakout {
-    overflow-x: visible;
-    overflow-y: hidden;
-    white-space: nowrap;
-    scrollbar-width: thin;
-    /* "auto" or "thin" */
-    scrollbar-color: blue orange;
-    /* scroll thumb and track */
 }
 
 .event_breakout li {
@@ -231,22 +246,6 @@ footer form input{
     width: 50vw;
     height: 300px;
     background: #f6f8fc;
-}
-
-.event_breakout::-webkit-scrollbar {
-    width: 1px;
-    /* width of the entire scrollbar */
-}
-
-.event_breakout::-webkit-scrollbar-track {
-    background: #f6f8fc;
-    /* color of the tracking area */
-}
-
-.event_breakout::-webkit-scrollbar-thumb {
-    background-color: gray;
-    border-radius: 10px;
-    border: 5px solid #f6f8fc;
 }
 
 .card {
@@ -297,6 +296,8 @@ tr:nth-child(even) {
 * {
     box-sizing: border-box;
 }
+
+
 /* Create two unequal columns that floats next to each other */
 
 .column {
@@ -313,6 +314,8 @@ tr:nth-child(even) {
 .right {
     width: 25%;
 }
+
+
 /* Clear floats after the columns */
 
 .row:after {
@@ -324,6 +327,8 @@ tr:nth-child(even) {
 * {
     box-sizing: border-box;
 }
+
+
 /* The actual timeline (the vertical ruler) */
 
 .timeline {
@@ -331,6 +336,8 @@ tr:nth-child(even) {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+
 /* The actual timeline (the vertical ruler) */
 
 .timeline::after {
@@ -343,6 +350,8 @@ tr:nth-child(even) {
     left: 50%;
     margin-left: -3px;
 }
+
+
 /* Container around content */
 
 .container {
@@ -351,6 +360,8 @@ tr:nth-child(even) {
     background-color: inherit;
     width: 50%;
 }
+
+
 /* The circles on the timeline */
 
 .container::after {
@@ -365,16 +376,22 @@ tr:nth-child(even) {
     border-radius: 50%;
     z-index: 1;
 }
+
+
 /* Place the container to the left */
 
 .left {
     left: 0;
 }
+
+
 /* Place the container to the right */
 
 .right {
     left: 50%;
 }
+
+
 /* Add arrows to the left container (pointing right) */
 
 .left::before {
@@ -389,6 +406,8 @@ tr:nth-child(even) {
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
 }
+
+
 /* Add arrows to the right container (pointing left) */
 
 .right::before {
@@ -403,11 +422,15 @@ tr:nth-child(even) {
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
 }
+
+
 /* Fix the circle for containers on the right side */
 
 .right::after {
     left: -16px;
 }
+
+
 /* The actual content */
 
 .content {
@@ -417,6 +440,8 @@ tr:nth-child(even) {
     border: 2px solid #2e3a19;
     border-radius: 6px;
 }
+
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
 @media screen and (max-width: 600px) {
@@ -446,4 +471,27 @@ tr:nth-child(even) {
     .right {
         left: 0%;
     }
+}
+
+.fairtradediv {
+    margin-top: calc(100px + 4vw);
+    margin-bottom: calc(100px + 8vw);
+    display: flex;
+}
+
+.fairtrade_text h1 {
+    font-size: 3rem;
+    margin-left: 40px;
+    color: #303c1c;
+    margin-top: -10px;
+}
+
+.fairtrade_text p {
+    letter-spacing: 0.5px;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    width: 80%;
 }
