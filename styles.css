@@ -274,19 +274,16 @@ footer form input {
     margin: auto;
     text-align: center;
     font-family: arial;
+    color: #757f4b;
 }
 
-.price {
-    color: grey;
-    font-size: 22px;
-}
 
 .card button {
     border: none;
     outline: 0;
-    padding: 12px;
+    padding: 5px;
     color: #f6f8fa;
-    background-color: #000;
+    background-color: #757f4b;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -295,6 +292,11 @@ footer form input {
 
 .card button:hover {
     opacity: 0.7;
+}
+
+.card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
 }
 
 table {
@@ -306,11 +308,8 @@ td {
     border-radius: 10px;
     width: 5%;
     height: 250px;
-    border-spacing: 10px;
-}
-
-tr:nth-child(even) {
-    background-color: #b3ffc6;
+    border-spacing: 15px;
+    padding: 5px;
 }
 
 * {
@@ -326,12 +325,30 @@ tr:nth-child(even) {
     height: 300px;
     /* Should be removed. Only for demonstration */
 }
+.column::-webkit-scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+}
+
+.column::-webkit-scrollbar-track {
+    background: #f1f0f0;
+    border-left: 1px solid gray;
+    /* color of the tracking area */
+}
+
+.column::-webkit-scrollbar-thumb {
+    background-color: #626e31;
+    border: 2px solid #626e31;
+}
+
 
 .left {
+    color: #757f4b;
     width: 75%;
 }
 
 .right {
+    color: #757f4b;
     width: 25%;
 }
 
