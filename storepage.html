@@ -8,6 +8,42 @@
     <link rel="shortcut icon" href="static/SAFFY LOGO.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #757f4b;
+            font-size: 10px;
+            color: #fff;
+            box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+            height: 100%;
+            width: 100%;
+            border-radius: 4px;
+            transition: all 500ms;
+            overflow: hidden;
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+  
+        .card:hover {
+            box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+            transform: translateY(-3px) scale(1.1);
+        }
+
+        .photo-grid {
+        display: grid;
+        gap: 1rem;
+        
+        grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+        grid-auto-rows: 300px;
+        }
+
+        .titleimagetext {
+            text-shadow: 2px 2px #ffffff
+        }
 
     </style>
     <title>Products</title>
@@ -33,110 +69,25 @@
     </nav>
     <header>
     </header>
-
-    <div class="row" style="background-color:#f6f8fa;height: 100%;">
-        <div class="column left" style="height: 100%;overflow-y: scroll;">
-            <h2>Products</h2>
-            <table>
-                <tr>
-                    <td>
-                        <div class="card">
-                            <img src="static/productspage/462120001.jpg" style="width:100%">
-                            <h1>Product </h1>
-                            <p>Some text about the jeans..</p>
-                            <p><button>View more</button></p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card">
-                            <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
-                            <p>Product Name</p>
-                            <p>Some text about the jeans..</p>
-                            <p><button>View more</button></p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card">
-                            <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
-                            <h1>Product </h1>
-                            <p>Some text about the jeans..</p>
-                            <p><button>View more</button></p>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="card">
-                            <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
-                            <h1>Tailored Jeans</h1>
-                            <p class="price">$19.99</p>
-                            <p>Some text about the jeans..</p>
-                            <p><button>Add to Cart</button></p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card">
-                            <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
-                            <h1>Tailored Jeans</h1>
-                            <p class="price">$19.99</p>
-                            <p>Some text about the jeans..</p>
-                            <p><button>Add to Cart</button></p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card">
-                            <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
-                            <h1>Tailored Jeans</h1>
-                            <p class="price">$19.99</p>
-                            <p>Some text about the jeans..</p>
-                            <p><button>Add to Cart</button></p>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="card">
-                            <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
-                            <h1>Tailored Jeans</h1>
-                            <p class="price">$19.99</p>
-                            <p>Some text about the jeans..</p>
-                            <p><button>Add to Cart</button></p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card">
-                            <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
-                            <h1>Tailored Jeans</h1>
-                            <p class="price">$19.99</p>
-                            <p>Some text about the jeans..</p>
-                            <p><button>Add to Cart</button></p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card">
-                            <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
-                            <h1>Tailored Jeans</h1>
-                            <p class="price">$19.99</p>
-                            <p>Some text about the jeans..</p>
-                            <p><button>Add to Cart</button></p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            
+    <div>
+        <h1 class="titleimagetext" style="text-align: center; color: #757f4b; text-shadow: 4px 4px rgb(236, 192, 110);">Product Categories</h1>
+    </div>
+    <div class="photo-grid" style="background-color:#f6f8fa;height: 100%;">
+        <div class="card">
+            <img src="static/producers/acaciaproduceredited.png" style="width: 100%;">
+            <h1><a href="productssample.html" style="color:white">Bandulf Industries</a> </h1>
         </div>
-        <div class="column right" style="background-color:#f6f8fa;">
-            <h2>Product Categories</h2>
-            <h3>NEW ARRIVALS</h3>
-            <h3>Living</h3>
-            <h5> Lamps</h5>
-            <h5> Lamps</h5>
-            <h3>Living</h3>
-            <h5> Lamps</h5>
-            <h5> Lamps</h5>
-            <h3>Living</h3>
-            <h5> Lamps</h5>
-            <h5> Lamps</h5>
+        <div class="card">
+            <img src="static/productspage/acacia/462120001.jpg" style="width: 100%;">
+            <h1>Alcadeza Native Products</h1>
+        </div>
+        <div class="card">
+            <img src="static/productspage/acacia/462120001.jpg" style="width: 100%;">
+            <h1>Let's Go Natural </h1>
+        </div>
+        <div class="card">
+            <img src="static/productspage/acacia/462120001.jpg" style="width: 100%;">
+            <h1>Jogermz Handicrafts Trading </h1>
         </div>
     </div>
 
