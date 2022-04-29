@@ -83,7 +83,7 @@ nav ul ul {
 
 nav ul li:hover>ul {
     background: #f6f8fa;
-    top: 60px;
+    top: 50px;
     opacity: 1;
     visibility: visible;
     transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
