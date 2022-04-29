@@ -244,6 +244,11 @@ footer form textarea {
     box-sizing: border-box;
 }
 
+footer form input::placeholder, 
+footer form textarea::placeholder{
+    color: #aeb973;
+}
+
 footer form input {
     height: 30px;
 }
