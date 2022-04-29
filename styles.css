@@ -273,12 +273,9 @@ footer form input {
     margin: auto;
     text-align: center;
     font-family: arial;
+    
 }
 
-.price {
-    color: grey;
-    font-size: 22px;
-}
 
 .card button {
     border: none;
@@ -296,6 +293,11 @@ footer form input {
     opacity: 0.7;
 }
 
+.card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+}
+
 table {
     width: 90%;
 }
@@ -306,10 +308,6 @@ td {
     width: 5%;
     height: 250px;
     border-spacing: 10px;
-}
-
-tr:nth-child(even) {
-    background-color: #b3ffc6;
 }
 
 * {
