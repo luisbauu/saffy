@@ -152,7 +152,6 @@ article h3 {
     background-size: cover;
 }
 
-
 .img-overlay-wrap svg {
     position: absolute;
     top: 29vw;
@@ -257,8 +256,8 @@ footer form textarea {
     box-sizing: border-box;
 }
 
-footer form input::placeholder, 
-footer form textarea::placeholder{
+footer form input::placeholder,
+footer form textarea::placeholder {
     color: #aeb973;
 }
 
@@ -294,7 +293,6 @@ footer form input {
     font-family: arial;
     color: #757f4b;
 }
-
 
 .card button {
     border: none;
@@ -343,6 +341,7 @@ td {
     height: 300px;
     /* Should be removed. Only for demonstration */
 }
+
 .column::-webkit-scrollbar {
     width: 10px;
     /* width of the entire scrollbar */
@@ -358,7 +357,6 @@ td {
     background-color: #626e31;
     border: 2px solid #626e31;
 }
-
 
 .left {
     color: #757f4b;
@@ -562,9 +560,89 @@ td {
 .eventsdiv h1 {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
     color: #303c1c;
 }
 
-.pastEvents {
-    display: flexbox;
+.otherEventsItems {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    background-image: url(static/warehousesale.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.otherEventsText {
+    position: absolute;
+    background-color: rgba(248, 240, 244, 0.75);
+    top: 180px;
+    left: 25px;
+    width: 250px;
+    height: 200px;
+}
+
+.otherEventsItems h3 {
+    margin: 20px 10px 10px;
+}
+
+.otherEventsItems p {
+    margin: 10px 10px 10px;
+    text-align: justify;
+}
+
+.otherEventsText button {
+    float: right;
+    border: 1px solid #303c1c;
+    border-radius: 5px;
+    color: white;
+    background-color: #303c1c;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.otherEventsText button:hover {
+    color: #303c1c;
+    background-color: white;
+}
+
+#anniversary {
+    background-image: url(static/anniversary.jpg);
+}
+
+#anniversary p {
+    margin: 10px 10px -5px;
+}
+
+#halloween {
+    background-image: url(static/halloween.jpg);
+}
+
+.currentevent button {
+    float: right;
+    border: 1px solid #303c1c;
+    border-radius: 5px;
+    color: white;
+    background-color: #303c1c;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.currentevent button:hover {
+    color: #303c1c;
+    background-color: white;
+}
+
+.otherEventsDate {
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: -10px;
+    left: 110px;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
