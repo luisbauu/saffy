@@ -9,10 +9,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .producerimagetext {
+            position: relative;
+            background-color: #757f4b;
+            color: white;
+            font-size: 25px;
+            padding: 32px 32px;
+        }
+
+        .producerimage {
+            min-width: 100%;
+            width: auto;
+            position: relative;
+            display: inline-block;
+            /* <= shrinks container to image size */
+        }
+
+        .producerimage:hover .image {
+            opacity: 0.3;
+        }
+
+        .producerimage:hover .middle {
+            opacity: 1;
+        }
+
+        .product-container {
+            position: relative;
+            width: 100%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 350px;
+            margin: auto;
+            height: 100%;
+            max-height:350px;
+        }
+        .product-container:hover{
+            transform: translateY(-3px) scale(1.1);
+        }
+        
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
             position: absolute;
-            bottom: 8px;
-            left: 20%;
-            text-shadow: 2px 2px #ffffff
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+            width: 70%;
+        }
+
+        .product-container:hover .image {
+            opacity: 0.3;
+        }
+
+        .product-container:hover .middle {
+            opacity: 1;
+        }
+        
+        .text {
+            background-color: #757f4b;
+            color: white;
+            font-size: 25px;
+            padding: 32px 32px;
+        }
+
+        .product-container button {
+            border: none;
+            outline: 0;
+            padding: 5px;
+            color: #757f4b;
+            background-color: #f6f8fa;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .product-container button:hover {
+            opacity: 0.7;
         }
     </style>
     <title>Products</title>
@@ -49,141 +132,192 @@
 
     <div class="row" style="background-color:#f6f8fa;height: 100%;">
         <div class="column left" style="height: 100%;overflow-y: scroll;">
-            <div class="img-overlay-wrap" style="height: 540px;">
-                <img src="static/producers/bandulfproducer.png" alt="" style="width:100%; height:100%; border-bottom-right-radius: 100px;border-bottom-left-radius: 100px;">
-                <div class="producerimagetext">
-                    <h2 style="font-size: 50px; color: #757f4b; margin: 0;font-family: 'Inter', sans-serif;font-family: 'Inter', sans-serif; text-align: center;">Bandulf Industries</h2>
-                    <p style="font-size: 25;color: #757f4b; font-family: 'Inter', sans-serif; width: 800px; margin-top: 10px; text-align: center;">Bandulf Industries is a producer of wooden products made out of acacia wood in San Carlos, Pangasinan. Their products include kitchen utensils, plates, bowl, trays, chopping boards, and wall decors. </p>
-
+            <div class="producerimage" style="height: 540px;">
+                <img src="static/producers/bandulfproducer.png" class="image" style="width:100%; height:100%; border-bottom-right-radius: 100px;border-bottom-left-radius: 100px;">
+                <div class="middle">
+                  <div class="producerimagetext">
+                    <h2 style="font-size: 50px; color: #f6f8fa; margin: auto;font-family: 'Inter', sans-serif;font-family: 'Inter', sans-serif; text-align: center;">Bandulf Industries</h2>
+                    <p style="font-size: 25;color: #f6f8fa; font-family: 'Inter', sans-serif; width: 800px; margin-top: 10px; text-align: center;">Bandulf Industries is a producer of wooden products made out of acacia wood in San Carlos, Pangasinan. Their products include kitchen utensils, plates, bowl, trays, chopping boards, and wall decors. </p>
+                  </div>
                 </div>
             </div>
-            <table>
+            <table style="margin-left: 5%;">
                 <tr>
                     <td>
-                        <div class="card">
-                            <img src="static/productspage/acacia/462120001.jpg" style="width: 100%;">
-                            <p style="font-size: 25px;"><strong>Tray (Pear)</strong> </p>
-                            <p style="font-size: 15px">
-                                Material: Acacia <br> Color: Natural <br> Size: 30.5 cm L x 22.5 cm W (widest pt) x 5cm H (LARGE) <br>
-                                <br> FOB $ 9.43</p>
-                            <p><button>Add to Cart</button></p>
+                        <div class="product-container">
+                            <img src="static/productspage/acacia/462120001.jpg" class="image" style="width: 100%; height: auto;">
+                            <div class="middle">
+                              <div class="text">
+                                <p style="font-size: 25px;"><strong>Tray (Pear)</strong> </p>
+                                <p style="font-size: 15px">
+                                    Material: Acacia <br> Color: Natural <br> Size: 30.5 cm L x 22.5 cm W (widest pt) x 5cm H (LARGE) <br>
+                                    <br> FOB $ 9.43</p> <br>
+                                <p><button>Add to Cart</button></p>
+                              </div>
+                            </div>
                         </div>
                     </td>
                     <td>
-                        <div class="card">
-                            <img src="static/productspage/acacia/462120002.jpg" style="width: 100%;">
-                            <p style="font-size: 25px;"><strong>Tray (Pear)</strong> </p>
-                            <p style="font-size: 15px">
+                        <div class="product-container">
+                            <img src="static/productspage/acacia/462120002.jpg" class="image" style="width: 100%; ">
+                            <div class="middle">
+                              <div class="text">
+                                <p style="font-size: 25px;"><strong>Tray (Pear)</strong> </p>
+                                <p style="font-size: 15px">
                                 Material: Acacia <br> Color: Natural <br> Size: 24.5 cm L x 18.5 cm W (widest pt) x 4cm H (MEDIUM) <br>
-                                <br> FOB $ 8.18</p>
-                            <p><button>Add to Cart</button></p>
-                        </div>
+                                <br> FOB $ 8.18</p> <br>
+                                <p><button>Add to Cart</button></p> 
+                              </div>
+                            </div>
+                          </div>
                     </td>
                     <td>
-                        <div class="card">
-                            <img src="static/productspage/acacia/462120003.jpg" style="width: 100%;">
-                            <p style="font-size: 25px;"><strong>Tray (Pear)</strong> </p>
-                            <p style="font-size: 15px">
+                        <div class="product-container">
+                            <img src="static/productspage/acacia/462120003.jpg" class="image" style="width: 100%;">
+                            <div class="middle">
+                              <div class="text">
+                                <p style="font-size: 25px;"><strong>Tray (Pear)</strong> </p>
+                                <p style="font-size: 15px">
                                 Material: Acacia <br> Color: Natural <br> Size: 20.5 cm L x 14.5 cm W (widest pt) x 3cm H (SMALL) <br>
-                                <br> FOB $ 4.31</p>
-                            <p><button>Add to Cart</button></p>
-                        </div>
+                                <br> FOB $ 4.31</p> <br>
+                                <p><button>Add to Cart</button></p>
+                              </div>
+                            </div>
+                          </div>
+                    </td>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="card">
-                            <img src="static/productspage/acacia/462120004-traidcraft.jpg" style="width: 100%;">
-                            <p style="font-size: 25px;"><strong>Tray Set (Pear)</strong> </p>
-                            <p style="font-size: 15px">
+                        <div class="product-container">
+                            <img src="static/productspage/acacia/462120004-traidcraft.jpg" class="image" style="width: 100%;">
+                            <div class="middle">
+                              <div class="text">
+                                <p style="font-size: 25px;"><strong>Tray Set (Pear)</strong> </p>
+                                <p style="font-size: 15px">
                                 Material: Acacia <br> Color: Natural <br> Size: 30.5 cm L x 22.5 cm W (widest pt) x 5cm H (LARGE), <br> 24.5 cm L x 18.5 cm W (widest pt) x 4cm H (MEDIUM) <br> 20.5 cm L x 14.5 cm W (widest pt) x 3cm H (SMALL) <br>
-                                <br> FOB $ 9.43</p>
-                            <p><button>Add to Cart</button></p>
-                        </div>
+                                <br> FOB $ 9.43</p> <br>
+                                <p><button>Add to Cart</button></p>
+                              </div>
+                            </div>
+                          </div>
                     </td>
                     <td>
-                        <div class="card">
-                            <img src="static/productspage/acacia/462150001.jpg" style="width: 100%;">
-                            <p style="font-size: 25px;"><strong>4 Tray Compartment (Square)</strong> </p>
-                            <p style="font-size: 15px">
+                        <div class="product-container">
+                            <img src="static/productspage/acacia/462150001.jpg" class="image" style="width: 100%;">
+                            <div class="middle">
+                              <div class="text">
+                                <p style="font-size: 25px;"><strong>4 Tray Compartment (Square)</strong> </p>
+                                <p style="font-size: 15px">
                                 Material: Acacia <br> Color: Natural <br> Size: 29.5 cm square widest x 4.5 cm H <br>
-                                <br> FOB $ 7.83</p>
-                            <p><button>Add to Cart</button></p>
-                        </div>
+                                <br> FOB $ 7.83</p> <br>
+                                <p><button>Add to Cart</button></p>
+                              </div>
+                            </div>
+                          </div>
                     </td>
                     <td>
-                        <div class="card">
-                            <img src="static/productspage/acacia/462150002.jpg" style="width: 100%;">
-                            <p style="font-size: 25px;"><strong>Salad Bowl Set (11 pcs) </strong> </p>
-                            <p style="font-size: 15px">
+                        <div class="product-container">
+                            <img src="static/productspage/acacia/462150002.jpg" class="image" style="width: 100%;">
+                            <div class="middle">
+                              <div class="text">
+                                <p style="font-size: 25px;"><strong>Salad Bowl Set (11 pcs) </strong> </p>
+                                <p style="font-size: 15px">
                                 Material: Acacia <br> Color: Natural <br> Size: ( 1pc ) Big Bowl - 30 cm square x 9 cm H ( 8pcs ) <br> Small bowls - 15 cm square x 5 cm H <br> Server - (spoon & fork shaped ) - 30 cm L x 6 cm Widest x 2.5 cm H <br>
-                                <br> FOB $ 56.07</p>
-                            <p><button>Add to Cart</button></p>
-                        </div>
+                                <br> FOB $ 56.07</p> <br>
+                                <p><button>Add to Cart</button></p>
+                              </div>
+                            </div>
+                          </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="card">
-                            <img src="static/productspage/acacia/462150003.jpg" style="width: 100%;">
-                            <p style="font-size: 25px;"><strong>Bowl Set (4pcs) </strong> </p>
-                            <p style="font-size: 15px">
+                        <div class="product-container">
+                            <img src="static/productspage/acacia/462150003.jpg" class="image" style="width: 100%;">
+                            <div class="middle">
+                              <div class="text">
+                                <p style="font-size: 25px;"><strong>Bowl Set (4pcs) </strong> </p>
+                                <p style="font-size: 15px">
                                 Material: Acacia <br> Color: Natural <br> Size: 11 cm square x 5 cm H<br>
-                                <br> FOB $ 8.29</p>
-                            <p><button>Add to Cart</button></p>
-                        </div>
+                                <br> FOB $ 8.29</p> <br>
+                                <p><button>Add to Cart</button></p>
+                              </div>
+                            </div>
+                          </div>
                     </td>
                     <td>
-                        <div class="card">
-                            <img src="static/productspage/acacia/462150004.jpg" style="width: 100%;">
-                            <p style="font-size: 25px;"><strong>Sushi Tray Set (2pcs) </strong> </p>
-                            <p style="font-size: 15px">
+                        <div class="product-container">
+                            <img src="static/productspage/acacia/462150004.jpg" class="image" style="width: 100%;">
+                            <div class="middle">
+                              <div class="text">
+                                <p style="font-size: 25px;"><strong>Sushi Tray Set (2pcs) </strong> </p>
+                                <p style="font-size: 15px">
                                 Material: Acacia <br> Color: Natural <br> Size: Big - 35 cm L x 18 cm W x 3.5 cm H <br> Small - 25.5 cm L x 11.5 cm W x 4 cm H) <br>
-                                <br> FOB $ 10.40</p>
-                            <p><button>Add to Cart</button></p>
-                        </div>
+                                <br> FOB $ 10.40</p> <br>
+                                <p><button>Add to Cart</button></p> 
+                              </div>
+                            </div>
+                          </div>
                     </td>
                     <td>
-                        <div class="card">
-                            <img src="static/productspage/acacia/462150005.jpg" style="width: 100%;">
-                            <p style="font-size: 25px;"><strong>Cheese Cutting Board</strong> </p>
-                            <p style="font-size: 15px">
+                        <div class="product-container">
+                            <img src="static/productspage/acacia/462150005.jpg" class="image" style="width: 100%;">
+                            <div class="middle">
+                              <div class="text">
+                                <p style="font-size: 25px;"><strong>Cheese Cutting Board</strong> </p>
+                                <p style="font-size: 15px">
                                 Material: Acacia <br> Color: Natural <br> Size: 51 cm L x 17 cm W x 2.5 cm H <br> Handle - 11.5 cm L x 4.5 cm widest<br>
-                                <br> FOB $ 8.37</p>
-                            <p><button>Add to Cart</button></p>
+                                <br> FOB $ 8.37</p>  <br>
+                                <p><button>Add to Cart</button></p>
+                              </div>
+                            </div>
                         </div>
                     </td>
                 </tr>
                 </tr>
                 <tr>
                     <td>
-                        <div class="card">
-                            <img src="static/productspage/acacia/462150006.jpg" style="width: 100%;">
-                            <p style="font-size: 25px;"><strong>Hanging Pizza Board</strong> </p>
-                            <p style="font-size: 15px">
+                        <div class="product-container">
+                            <img src="static/productspage/acacia/462150006.jpg" class="image" style="width: 100%;">
+                            <div class="middle">
+                              <div class="text">
+                                <p style="font-size: 25px;"><strong>Hanging Pizza Board</strong> </p>
+                                <p style="font-size: 15px">
                                 Material: Acacia <br> Color: Natural <br> Size: 45.5 cm L ( with handle ) x 2 cm H <br> Abaca rope : 56 cm L <br>
-                                <br> FOB $ 16.64</p>
-                            <p><button>Add to Cart</button></p>
+                                <br> FOB $ 16.64</p> <br>
+                                <p><button>Add to Cart</button></p> 
+                              </div>
+                            </div>
                         </div>
                     </td>
                     <td>
-                        <div class="card">
-                            <img src="static/productspage/acacia/462150009.jpg" style="width: 100%;">
-                            <p style="font-size: 25px;"><strong>Heart Bowl</strong> </p>
-                            <p style="font-size: 15px">
+                        <div class="product-container">
+                            <img src="static/productspage/acacia/462150009.jpg" class="image" style="width: 100%;">
+                            <div class="middle">
+                              <div class="text">
+                                <p style="font-size: 25px;"><strong>Heart Bowl</strong> </p>
+                                <p style="font-size: 15px">
                                 Material: Acacia <br> Color: Natural <br> Size: 20.5 cm L x 20.5 cm W x 5 cm H <br>
-                                <br> FOB $ 6.39</p>
-                            <p><button>Add to Cart</button></p>
+                                <br> FOB $ 6.39</p> <br>
+                                <p><button>Add to Cart</button></p> 
+                              </div>
+                            </div>
                         </div>
                     </td>
                     <td>
-                        <div class="card">
-                            <img src="static/productspage/acacia/462150012.jpg" style="width: 100%;">
-                            <p style="font-size: 25px;"><strong>Spoon and Fork Set</strong> </p>
-                            <p style="font-size: 15px">
+
+                        <div class="product-container">
+                            <img src="static/productspage/acacia/462150012.jpg" class="image" style="width: 100%;">
+                            <div class="middle">
+                              <div class="text">
+                                <p style="font-size: 25px;"><strong>Spoon and Fork Set</strong> </p>
+                                <p style="font-size: 15px">
                                 Material: Acacia <br> Color: Natural <br> Size: Spoon : 26 cm L x 9.5 cm widest point: 2 cm thickness Fork : 26 cm L x 9 cm widest point : 2 cmE) <br>
-                                <br> FOB $ 4.06</p>
-                            <p><button>Add to Cart</button></p>
+                                <br> FOB $ 4.06</p> <br>
+                                <p><button>Add to Cart</button></p>
+                              </div>
+                            </div>
                         </div>
                     </td>
                 </tr>
